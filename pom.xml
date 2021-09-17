@@ -55,6 +55,20 @@
             <version>3.0.0</version>
         </dependency>
     <!--  End swagger-->
+
+    <!-- Start Spring Security  -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+    <!-- End Spring Security    -->
+    <!-- JWT Start  -->
+        <dependency>
+            <groupId>com.auth0</groupId>
+            <artifactId>java-jwt</artifactId>
+            <version>3.18.1</version>
+        </dependency>
+    <!-- JWT End    -->
     </dependencies>
 
     <build>
