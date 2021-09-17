@@ -19,27 +19,4 @@ public class UserManagerApiApplication {
 		return new BCryptPasswordEncoder();
 	}
 
-
-//	@Bean
-//	@Autowired
-//	CommandLineRunner run(UserService userService){
-//		return args -> {
-//			userService.saveRole(new Role(null, "ROLE_ACT"));
-//			userService.saveRole(new Role(null, "ROLE_MAKER"));
-//			userService.saveRole(new Role(null, "ROLE_CHECKER"));
-//			userService.saveRole(new Role(null, "ROLE_ADMIN"));
-//
-//			userService.saveUser(new AppUser(null, "Daniel Craig", "danny", "1234", new ArrayList<>()));
-//			userService.saveUser(new AppUser(null, "Jonna Hill", "hill", "1234", new ArrayList<>()));
-//			userService.saveUser(new AppUser(null, "Lewis Hamilton", "hamilton", "1234", new ArrayList<>()));
-//			userService.saveUser(new AppUser(null, "Sarah Johns", "sarah", "1234", new ArrayList<>()));
-//
-//			userService.addRoleToUser("danny", "ROLE_ACT");
-//			userService.addRoleToUser("hill", "ROLE_MAKER");
-//			userService.addRoleToUser("hamilton", "ROLE_CHECKER");
-//			userService.addRoleToUser("sarah", "ROLE_ACT");
-//			userService.addRoleToUser("sarah", "ROLE_MAKER");
-//			userService.addRoleToUser("sarah", "ROLE_CHECKER");
-//		};
-//	}
 }
