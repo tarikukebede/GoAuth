@@ -21,21 +21,24 @@ import java.util.Collection;
 @NoArgsConstructor
 @AllArgsConstructor
 public class AppUser implements Serializable {
+
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @NotEmpty(message = "UserName can not be empty")
-    @Min(value = 6, message = "Username should be less than 6 characters")
+    @Min(value = 4, message = "Username should not be less than 6 characters")
     @Max(value = 20, message = "username should not be greater than 20 characters")
     private String username;
 
     @NotEmpty(message = "Password can not be empty")
-    @Min(value = 6, message = "Password should be less than 6 characters")
+    @Min(value = 4, message = "Password should not be less than 6 characters")
     @Max(value = 20, message = "Password should not be greater than 20 characters")
     private String password;
 
     @ManyToMany(fetch = FetchType.EAGER)
     private Collection<Role> roles = new ArrayList<>();
+
 
 }

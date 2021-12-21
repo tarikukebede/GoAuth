@@ -32,7 +32,7 @@ public class ProjectUserController {
         return projectUserService.get(projectUserId);
     }
 
-    @GetMapping
+    @GetMapping("/all")
     public ResponseEntity<List<ProjectUser>> getAll(){
         return projectUserService.getAll();
     }

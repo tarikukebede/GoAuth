@@ -22,13 +22,14 @@ public class ProjectUser {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+
     @NotEmpty(message = "UserName can not be empty")
-    @Min(value = 6, message = "Username should be less than 6 characters")
+    @Min(value = 4, message = "Username should be less than 6 characters")
     @Max(value = 20, message = "username should not be greater than 20 characters")
     private String username;
 
     @NotEmpty(message = "Password can not be empty")
-    @Min(value = 6, message = "Password should be less than 6 characters")
+    @Min(value = 4, message = "Password should be less than 6 characters")
     @Max(value = 20, message = "Password should not be greater than 20 characters")
     private String password;
 }
